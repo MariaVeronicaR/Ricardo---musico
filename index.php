@@ -64,7 +64,7 @@
                                     <li><a href="#inicio">inicio</a></li>
                                     <li><a href="#videos">Videos</a></li>
                                     <li><a href="#presentacion">Conóceme</a></li>
-                                    <li><a href="#musicap">Música propia</a></li>
+                                    <li><a href="#musicao">Música original</a></li>
                                     <li><a href="#contacto">Contacto</a></li>
                                 </ul>
 
@@ -199,15 +199,15 @@
     <!-- ##### Featured Artist Area End ##### -->
 
     <!-- ##### Buy Now Area Start ##### -->
-    <section class="oneMusic-buy-now-area has-fluid bg-gray section-padding-100" id="musicap">
+    <section class="oneMusic-buy-now-area has-fluid bg-gray section-padding-100" id="musicao">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading style-2">
                         <p>Próximamente</p>
-                        <h2>Música Propia</h2>
+                        <h2>Música Original</h2>
                         <br>
-                        <img src="img/bg-img/guitar.png" alt="" style="border: 1px; width:20%;height:50%;">
+                        <img src="img/bg-img/guitar.png" alt="" style=" width:20%;height:50%;">
                     </div>
                 </div>
             </div>
@@ -237,26 +237,26 @@
                 <div class="col-12">
                     <!-- Contact Form Area -->
                     <div class="contact-form-area">
-                        <form class="" action="mailto:rpaolinimillan@gmail.com" method="post" enctype="text/plain">
+                        <form  action="php/enviarcorreo.php" method="post" >
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group wow fadeInUp" data-wow-delay="100ms">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group wow fadeInUp" data-wow-delay="200ms">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Correo">
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <div class="form-group wow fadeInUp" data-wow-delay="400ms">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <textarea type="text" name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                    <button class="btn oneMusic-btn mt-30" type="submit">Enviar <i class="fa fa-angle-double-right"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -284,7 +284,7 @@
                           <li><a href="#inicio">inicio</a></li>
                           <li><a href="#videos">Videos</a></li>
                           <li><a href="#presentacion">Conóceme</a></li>
-                          <li><a href="#musicap">Música propia</a></li>
+                          <li><a href="#musicao">Música original</a></li>
                           <li><a href="#contacto">Contacto</a></li>
                         </ul>
                     </div>
