@@ -237,7 +237,7 @@
                 <div class="col-12">
                     <!-- Contact Form Area -->
                     <div class="contact-form-area">
-                        <form  action="mailto:mvrm10@gmail.com?subject=Mensaje-Ricardo" method="post" enctype="text/plain"  target="_top" >
+                        <form  action="mailto:mvrm10@gmail.com?subject=MessageFromWebsite" method="post" enctype="text/plain"  target="_top" >
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group wow fadeInUp" data-wow-delay="100ms">
@@ -254,6 +254,8 @@
                                 </div>
                             </div>
                         </form>
+                        <a href="mailto:mvrm10@gmail.com?Subject=MessageFromWebsite" title="Share via email" rel="nofollow" target="_top">Email</a>
+
                     </div>
                 </div>
             </div>
@@ -290,7 +292,22 @@
 
     <!-- ##### All Javascript Script ##### -->
 
-
+    <script type="text/javascript">
+            window.addEventListener("load", function() {
+            document.getElementById("mailtolink").addEventListener("click", function(e) {
+            e.preventDefault() // remove after testing
+            let url = new URL(this.href);
+            const name = document.querySelector("[name=name]").value.trim();
+            const email = document.querySelector("[name=email]").value.trim();
+            const message = document.querySelector("[name=message]").value.trim();
+            url.searchParams.set("from", email);
+            url.searchParams.set("subject", "Message from " + (document.title || location.hostname))
+            url.searchParams.set("body", name + " said " + message)
+            this.href=url;
+            console.log(url)
+          })
+          });
+    </script>
     <script src="js/carousel.js"></script>
 
     <!-- jQuery-2.2.4 js -->
