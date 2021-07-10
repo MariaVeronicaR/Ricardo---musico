@@ -18,5 +18,9 @@ $asunto = 'Mensaje de sitio web personal - RicPaolini';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:../index.php");
+echo  "<h2>" . $name . "</h2>";
+echo  "<h2>" . $email . "</h2>";
+echo  "<h2>" . $message . "</h2>";
+
+
 ?>
